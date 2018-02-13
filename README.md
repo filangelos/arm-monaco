@@ -7,7 +7,7 @@
 1. Fetch `npm` packages by executing `yarn install`
 2. Restore `dotnet` packages by running `dotnet restore`
 3. Compile `fsharp` code to `javascript` using `webpack` by executing `yarn run start`
-4. Open `electron` application at a new terminal tab by running `yarn start launch`
+4. Open `electron` application at a new terminal tab by running `yarn run launch`
 
 ## TODO
 
