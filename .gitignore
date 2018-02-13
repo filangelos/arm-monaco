@@ -258,3 +258,6 @@ samples/*/temp/*
 sample/app/bundle\.js*
 
 sample/out/
+
+
+.DS_Store
