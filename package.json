@@ -1,0 +1,27 @@
+{
+  "name": "arm-monaco-editor",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "cd src/Main && dotnet fable webpack --port free -- -w --config webpack.config.js",
+    "build": "cd src/Main && dotnet fable webpack --port free -- -p --config webpack.config.js",
+    "launch": "electron ."
+  },
+  "dependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "monaco-editor": "^0.10.1",
+    "requirejs": "^2.3.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "6.24.1",
+    "babel-standalone": "^6.26.0",
+    "babel-template": "^6.26.0",
+    "electron": "^1.7.5",
+    "fable-loader": "^1.0.7",
+    "fable-utils": "^1.0.2",
+    "loglevel": "^1.4.1",
+    "webpack": "^3.11.0"
+  }
+}
