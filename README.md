@@ -2,6 +2,15 @@
 
 > High Level Programming 2018 - Monaco Editor Starter Code
 
+## Requirements
+
+1. [`dotnet core`](https://www.microsoft.com/net/learn/get-started/)
+2. [`nodejs`](https://nodejs.org/en/download/)
+3. [`yarn`](https://yarnpkg.com/en/docs/install)
+4. [`electron`](https://electronjs.org/docs/tutorial/installation)
+5. (**non-Windows only**) [`mono`](http://www.mono-project.com/docs/getting-started/install/)
+6. [`fsharp`](http://fsharp.org/use/)
+
 ## Getting Started
 
 1. Fetch `npm` packages by executing `yarn install`
