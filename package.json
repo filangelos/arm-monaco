@@ -1,6 +1,6 @@
 {
   "name": "arm-monaco-editor",
-  "main": "app/main.js",
+  "main": "main.js",
   "scripts": {
     "start": "cd src/Main && dotnet fable webpack --port free -- -w --config webpack.config.js",
     "build": "cd src/Main && dotnet fable webpack --port free -- -p --config webpack.config.js",

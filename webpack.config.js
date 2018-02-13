@@ -15,7 +15,6 @@ var isProduction = process.argv.indexOf("-p") >= 0;
 console.log("Bundling for " + (isProduction ? "production" : "development") + "...");
 
 var basicConfig = {
-  devtool: "source-map",
   resolve: {
     modules: [resolve("./node_modules/")]
   },
@@ -51,16 +50,17 @@ var mainConfig = Object.assign({
   target: "electron-main",
   entry: resolve("src/Main/Main.fsproj"),
   output: {
-    path: resolve("app"),
+    path: resolve("."),
     filename: "main.js"
   }
 }, basicConfig);
 
 var rendererConfig = Object.assign({
   target: "electron-renderer",
+  devtool: "source-map",
   entry: resolve("src/Renderer/Renderer.fsproj"),
   output: {
-    path: resolve("app"),
+    path: resolve("app/js"),
     filename: "renderer.js"
   },
   externals: {

@@ -16,18 +16,18 @@ let createMainWindow () =
     // https://electronjs.org/docs/api/browser-window#new-browserwindowoptions
     options.width <- Some 1200.
     options.height <- Some 800.
-    options.frame <- Some false
+    options.frame <- Some true
     let window = electron.BrowserWindow.Create(options)
 
     // Load the index.html of the app.
     let opts = createEmpty<Node.Url.Url<obj>>
-    opts.pathname <- Some <| path.join(Node.Globals.__dirname, "index.html")
+    opts.pathname <- Some <| path.join(Node.Globals.__dirname, "/app/index.html")
     opts.protocol <- Some "file:"
     window.loadURL(url.format(opts))
 
 
     #if DEBUG
-    fs.watch(path.join(Node.Globals.__dirname, "renderer.js"), fun _ _ ->
+    fs.watch(path.join(Node.Globals.__dirname, "/app/js/renderer.js"), fun _ _ ->
         window.webContents.reloadIgnoringCache()
     ) |> ignore
     #endif
