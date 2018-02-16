@@ -9,3 +9,4 @@ nuget Fable.Import.Electron
 nuget Fable.PowerPack
 
 github fable-compiler/Fable src/dotnet/Fable.JS/Interfaces.fs
+nuget Expecto

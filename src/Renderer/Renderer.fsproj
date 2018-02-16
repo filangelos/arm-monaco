@@ -4,7 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Ref.fs" />
+    <Compile Include="Update.fs" />
     <Compile Include="Renderer.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emulator\Emulator.fsproj" />
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
