@@ -104,10 +104,31 @@ The `src/Main/Main.fsproj` is a mini-project controlling the main process, which
 #### `src/Renderer` and `app/js/renderer.js`
 
 The `Chromium` renderer process `F#` project.
+Sets up callbacks and event-listeners for the DOM elements of `index.html`.
 Use the documentation of each module to follow its logic.
 > This project is incomplete, you are supposed to modify the code to customize the View (GUI) and link it with your emulator.
+
+##### Access to `Emulator` project
+
 You have access to your `Emulator` project by the namespace `Emulator` within the `Renderer` project,
-see `src/Renderer/Renderer.fs` for an example.
+see `src/Renderer/Renderer.fs` for an example:
+
+```fsharp
+open Emulator
+/// Access to `Emulator` project
+let foo = Emulator.Common.A
+```
+
+##### `Monaco Editor`
+
+```fsharp
+open Ref
+open Update
+/// Get code from editor
+let code = Ref.code()
+/// Set code to editor
+Update.code("mov r7, #5")
+```
 
 #### `src/Emulator`
 
