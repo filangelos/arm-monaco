@@ -9,7 +9,7 @@
 ## Introduction
 
 This is the skeleton code for the **EE3-22: High Level Programming** final project.
-The target language is `F#`, which is transpiled to `Javascript` (`js`) thanks to [Fable](fable.io).
+The target language is `F#`, which is transpiled to `Javascript` (`js`) thanks to [Fable](https://fable.io).
 [Github Electron](https://electronjs.org/) is then used to convert the developed web-app to a cross-platform native application,
 providing access to platform-level commands (i.e. file-system, path, multiple processes), which are unavailable to
 (vanilla) browser web-apps.
