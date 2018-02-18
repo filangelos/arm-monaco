@@ -46,7 +46,7 @@ let init () =
         Update.code("mov r7, #5")
     )
     Ref.save.addEventListener_click(fun _ ->
-        Browser.window.alert "NotImplemented :|"
+        Browser.window.alert (sprintf "%A" (Ref.code ()))
     )
     Ref.run.addEventListener_click(fun _ ->
         Browser.window.alert "NotImplemented :|"

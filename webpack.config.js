@@ -7,8 +7,8 @@ function resolve(filePath) {
 }
 
 var babelOptions = fableUtils.resolveBabelOptions({
-  // presets: [["es2015", { "modules": false }]],
-  // plugins: ["transform-runtime"]
+  presets: [["es2015", { "modules": false }]],
+  plugins: ["transform-runtime"]
 });
 
 var isProduction = process.argv.indexOf("-p") >= 0;
