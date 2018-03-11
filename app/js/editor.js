@@ -32,7 +32,8 @@ amdRequire(['vs/editor/editor.main'], function () {
     brackets: [
       ['{', '}', 'delimiter.curly'],
       ['[', ']', 'delimiter.square'],
-      ['(', ')', 'delimiter.parenthesis']
+      ['(', ')', 'delimiter.parenthesis'],
+      ['<', '>', 'delimiter.angle']
     ],
 
     operators: [
